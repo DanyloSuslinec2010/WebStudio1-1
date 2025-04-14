@@ -1,22 +1,39 @@
 .clients-ul {
   display: flex;
   flex-wrap: wrap;
+  @media (min-width: 768px) {
+    
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    
+  }
+  @media (min-width: 1200px) {
+   
+      display: flex;
+  flex-wrap: wrap;
   gap: 30px;
   justify-content: center;
+   
+  }
 }
 .clients-svg {
-  outline: solid red;
-   width: 106px;
-  height: 60px;
+  outline: solid #afb1b8;
+  width: 226px;
+  height: 92px;
 }
 .clients-title {
   display: flex;
   justify-content: center;
 }
-.clients-use {
- 
+.clients-use{
+  padding-left:60px;
+  padding-right: 60px;
   padding-top: 16px;
-  padding-left: 32px;
-  padding-right: 32px;
   padding-bottom: 16px;
+  width: 106px;
+  height: 60px;
+}
+.clients-li {
+  width: 226px;
 }

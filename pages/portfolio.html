@@ -10,26 +10,65 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link rel="stylesheet" href="../css/normalize.css">
 <link rel="stylesheet" href="../css/portfolio.css" />
+<link rel="stylesheet" href="../scss/main.scss">
   </head>
   <body class="body">
     <header class="header">
         <div class="container">
-        <a href="../index.html"
-        ><span class="header-logo">Web</span><span class="header-logo1">Studio</span></a
-      >
-      <nav>
-        <ul>
-             <li><a href="../index.html" class="header-main">Cтудія</a></li>
-             <li><a href="../pages/portfolio.html" class="header-main">Портфоліо</a></li>
-             <li><a href="#" class="header-main">Контакти</a></li>
-            
-         </ul>
-     </nav>
-     <ul>
-         <li><a href="mailto:info@devstudio.com" class="header-contacts">info@devstudio.com</a></li>
-         <li><a href="tel:+380961111111" class="header-contacts">+38 096 111 11 11</a></li>
-     </ul>
-    </div>
+        <a href="./index.html"
+          ><span class="header-logo">Web</span
+          ><span class="header-logo1">Studio</span></a
+        >
+        <nav>
+          <ul class="header-ul">
+            <li class="main-flex">
+              <a href="../index.html" class="header-main">Cтудія</a>
+            </li>
+            <li class="main-flex">
+              <a href="../pages/portfolio.html" class="header-main">Портфоліо</a>
+            </li>
+            <li class="main-flex">
+              <a href="#" class="header-main">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header-ul">
+          <li>
+            <a href="mailto:info@devstudio.com" class="header-contacts"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a href="tel:+380961111111" class="header-contacts"
+              >+38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+        <button type="button" class="burger" data-menu-open><img src="./img/menu.png" alt=""></button>
+      </div>
+      <div class="burger-menu is-hidden" data-menu>
+  <div>
+    <button type="button" class="burger-close" data-menu-close>x</button>
+    <ul class="mob-list">
+      <li><a href="./index.html">Cтудія</a></li>
+      <li><a href="./pages/portfolio.html">Портфоліо</a></li>
+      <li><a href="#">Контакти</a></li>
+    </ul>
+
+    <ul class="mob-contacts">
+      <li><a href="tel:+380961111111" class="mob-phone">+38 096 111 11 11</a></li>
+      <li><a href="mailto:info@devstudio.com" class="mob-email">info@devstudio.com</a></li>
+    </ul>
+
+    <ul class="mob-socials">
+      <li><a href="#">Instagram</a></li>
+      <li><a href="#">Twitter</a></li>
+      <li><a href="#">Facebook</a></li>
+      <li><a href="#">LinkedIn</a></li>
+    </ul>
+  </div>
+        </div>
+
      </header>
 <main>
     <!-- section hero -->
@@ -189,5 +228,6 @@
       </address>
     </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

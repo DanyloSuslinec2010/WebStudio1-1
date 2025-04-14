@@ -1,12 +1,15 @@
 @import "utils/variables";
 @import "reset/base";
 @import "components/header";
+@import "components/burger";
 @import "components/main";
 @import "components/work";
 @import "components/team";
 @import "components/modal";
-@import "components/clients"; 
-@import "components/footer"
+@import "components/clients";
+@import "components/footer";
+
+
 /*.body{
     font-family: Roboto;
 }

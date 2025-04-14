@@ -24,6 +24,7 @@
   font-weight: 700;
   line-height: 1.16;
   letter-spacing: 0.78px;
+  
 }
 .header-logo2 {
   color: $title-color;
@@ -113,11 +114,6 @@ nav ul li {
   transition-property: $text-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  @media (min-width: 768px) {
-    .header-contacts {
-      display: flex;
-    }
-  }
 }
 .header-contacts::after {
   background-color: transparent;
@@ -139,4 +135,11 @@ nav ul li {
   border-radius: 2px;
   flex-shrink: 0;
   display: block;
+}
+.header-ul,
+nav {
+  display: none;
+  @media (min-width: 768px) {
+    display: flex;
+  }
 }

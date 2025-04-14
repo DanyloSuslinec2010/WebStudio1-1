@@ -3,25 +3,57 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../img/Img.png);
+    url(../../img/heromob.png);
+    padding: 118px 0px;
   background-repeat: no-repeat;
   background-position: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  background-size: cover;
   flex-shrink: 0;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx){
+        background-image: url(../../img/heromobb@2x.png);
+    }
+    @media(min-width: 768px) and (max-width:1023px){
+background-image: url(../../img/herotab.png);
+padding: 120px 0px;
+ @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx){
+        background-image: url(../../img/herotab@2x.png);
+    }
+    }
+    @media(min-width:1024px){
+background-image: url(../../img/herodesk.png);
+ padding-top: 200px;
+  padding-bottom: 200px;
+ @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx){
+        background-image: url(../../img/herodesk@2x.png);
+    }
+    }
 }
 .main-title {
-  width: 696px;
+  font-size: 26px;
+    width: 360px;
+ margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
   justify-content: center;
   color: $title-color;
   text-align: center;
-  font-size: 44px;
   font-weight: 900;
-  line-height: 1.36; /* 136.364% */
+  line-height: 1.36; 
   letter-spacing: 2.64px;
   text-transform: uppercase;
+  @media(min-width: 768px){
+    font-size: 26px;
+  }
+  @media(min-width: 1024px){
+    font-size: 44px;
+    width: 696px;
+  }
 }
 .main-button {
   display: flex;
@@ -38,4 +70,5 @@
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   border-color: transparent;
   padding: 10px 32px;
+ 
 }
